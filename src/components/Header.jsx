@@ -298,21 +298,21 @@ const Header = () => {
 
                     <div className="flex flex-col md:flex-row gap-10">
                         <ul className="flex flex-col w-full md:w-auto">
-                            <li className="px-7 py-5 border-b border-gray-200 border-gray-200 hover:bg-gray-100 cursor-pointer flex justify-between items-center">
+                            <li className="px-7 py-5 border-b border-gray-200  hover:bg-gray-100 cursor-pointer flex justify-between items-center">
                                 <div className="flex gap-4 items-center">
                                     <BsPeopleFill size={24} className="text-MainColor" />
                                     <h3>Кому</h3>
                                 </div>
                                 <BiRightArrowAlt size={24} className="text-MainColor" />
                             </li>
-                            <li className="px-7 py-5 border-b border-gray-200 border-gray-200 hover:bg-gray-100 cursor-pointer flex justify-between items-center">
+                            <li className="px-7 py-5 border-b border-gray-200  hover:bg-gray-100 cursor-pointer flex justify-between items-center">
                                 <div className="flex gap-4 items-center">
                                     <BiKnife size={24} className="text-MainColor" />
                                     <h3>Повод</h3>
                                 </div>
                                 <BiRightArrowAlt size={24} className="text-MainColor" />
                             </li>
-                            <li className="px-7 py-5 border-b border-gray-200 border-gray-200 hover:bg-gray-100 cursor-pointer flex justify-between items-center">
+                            <li className="px-7 py-5 border-b border-gray-200  hover:bg-gray-100 cursor-pointer flex justify-between items-center">
                                 <div className="flex gap-4 items-center">
                                     <LuPcCase size={24} className="text-MainColor" />
                                     <h3>Наполнение</h3>
