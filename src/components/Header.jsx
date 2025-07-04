@@ -289,7 +289,7 @@ const Header = () => {
                 </div>
             )}
 
-            {/* Modal texnologiya */}
+            {/* Modal Кому */}
             {openMenu2 && (
                 <div className="fixed inset-0 z-50 bg-white overflow-y-auto px-4 py-6 md:absolute md:top-[180px] md:left-[320px] md:max-w-[757px] md:rounded-lg md:shadow-xl md:px-0 md:py-7">
                     <button
@@ -351,7 +351,6 @@ const Header = () => {
                     {/* Slide-in menu */}
                     <div className="fixed top-0 left-0 h-full w-3/4 max-w-xs bg-white shadow-lg z-50 transform transition-transform duration-300 translate-x-0">
                         <nav className="text-sm p-4 flex flex-col justify-between h-full relative">
-                            {/* X Close Button */}
                             <button
                                 onClick={() => SetMobileMenu(false)}
                                 className="absolute top-3 right-3 text-gray-500 hover:text-red-500 transition"
