@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.container{
+  @apply w-full max-w-[1440px] px-4 mx-auto
+}
+@theme{
+  --font-tenor:"Tenor Sans","sans-serif";
+  --color-MainColor:#4888FF;
+}
