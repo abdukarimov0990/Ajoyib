@@ -15,7 +15,7 @@ const App = () => {
             }}
         >
             <div className="container  flex items-center justify-between h-full">
-                {/* Text Section */}
+                {/* Text Bo'limi */}
                 <div className="max-w-3xl text-white space-y-6">
                     <h1 className="text-4xl font-bold leading-snug">
                         Отправляйся в приключения с нашими эпическими лут-корзинами и наборами!
@@ -30,7 +30,7 @@ const App = () => {
                     </button>
                 </div>
 
-                {/* Image */}
+                {/* Img */}
                 <div className="absolute h-[500px] left-[874px]">
                     <img
                         src={hero}

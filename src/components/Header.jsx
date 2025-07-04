@@ -7,7 +7,7 @@ import { BsHeartFill, BsLightning, BsPeopleFill, BsWhatsapp } from 'react-icons/
 import { FaSalesforce, FaFire } from 'react-icons/fa'
 import { PiTelegramLogo } from 'react-icons/pi'
 import { TbWorld } from 'react-icons/tb'
-import { BiHeadphone, BiKnife, BiNews, BiPlus, BiRightArrow, BiRightArrowAlt, BiSearch, BiX } from 'react-icons/bi'
+import { BiHeadphone, BiKnife, BiNews, BiPlus, BiRightArrowAlt, BiSearch, BiX } from 'react-icons/bi'
 import { SiPoetry } from 'react-icons/si'
 import logo from '../img/packman.svg'
 import { LuLaptop, LuPcCase, LuTv } from 'react-icons/lu'
@@ -144,6 +144,7 @@ const Header = () => {
                             <BiPlus size={16} /> Собрать компьютер
                         </button>
                     </nav></div></div>
+                    {/* responsive TOP PART*/}
             <div className=" bg-[#F4F4F4] text-[#343A3F] text-sm">
                 <div className="flex lg:hidden container mx-auto  justify-between py-2 mb-4">
                     <div className="flex gap-2 items-center">
@@ -168,7 +169,7 @@ const Header = () => {
                 </div>
             </div>
 
-            {/* MIDDLE PART */}
+            {/* Responsive MIDDLE PART */}
             <div className="flex lg:hidden flex-col gap-5 items-center">
                 <div className="flex container justify-between items-center">
                     <div className="flex gap-1.5">
@@ -206,6 +207,7 @@ const Header = () => {
                 </div>
 
             </div>
+            {/* Modal Aksiya  */}
             {openMenu && (
                 <div className="fixed inset-0 z-50 bg-white overflow-y-auto px-4 py-6 md:absolute md:top-[180px] md:left-[195px] md:max-w-[892px] md:rounded-lg md:shadow-xl md:px-0 md:py-7">
                     <button
@@ -287,6 +289,7 @@ const Header = () => {
                 </div>
             )}
 
+            {/* Modal texnologiya */}
             {openMenu2 && (
                 <div className="fixed inset-0 z-50 bg-white overflow-y-auto px-4 py-6 md:absolute md:top-[180px] md:left-[320px] md:max-w-[757px] md:rounded-lg md:shadow-xl md:px-0 md:py-7">
                     <button
@@ -336,7 +339,7 @@ const Header = () => {
                     </div>
                 </div>
             )}
-
+            {/* Mobile Menu  */}
             {MobileMenu && (
                 <>
                     {/* Overlay background */}
@@ -396,8 +399,6 @@ const Header = () => {
                     </div>
                 </>
             )}
-
-
         </header>
     )
 }
