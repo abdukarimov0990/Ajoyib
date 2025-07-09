@@ -45,7 +45,7 @@ const Header = () => {
     const [openMenu, SetOpenMenu] = useState(false)
     const [openMobileMenu, SetopenMobileMene] = useState(false)
     const [openMobileModal, SetopenMobileModal] = useState(false)
-    const [openPhone, SetopenPhone] = useState(true)
+    const [openPhone, SetopenPhone] = useState(false)
     const [openGadjet, SetopenGadjet] = useState(false)
 
     return (
@@ -54,21 +54,21 @@ const Header = () => {
             <div className="hidden lg:block bg-[#F4F4F4] text-[#343A3F] text-sm">
                 <div className="container mx-auto flex justify-between py-2 mb-4">
                     <div className="flex gap-12">
-                        <p className="flex gap-1 items-center">
+                        <p className="flex hover:text-MainColor gap-1 items-center">
                             <IoLocationSharp size={20} /> Сайлент-Хилл
                         </p>
-                        <a href="tel:+75555553750" className="flex gap-1 items-center">
+                        <a href="tel:+75555553750" className="flex gap-1 hover:text-MainColor items-center">
                             <CgSmartphone size={20} /> +7 555 555-37-50
                         </a>
                     </div>
-                    <div className="flex items-center gap-3">
+                    <div className="flex hover:text-MainColor items-center gap-3">
                         <h3>Ежедневно</h3>
                         <h3>9:00 — 21:00</h3>
                     </div>
                     <div className="flex items-center gap-4">
-                        <h3>Доставка</h3>
-                        <h3>Оплата</h3>
-                        <h3>Контакты</h3>
+                        <h3 className='hover:text-MainColor'>Доставка</h3>
+                        <h3 className='hover:text-MainColor'>Оплата</h3>
+                        <h3 className='hover:text-MainColor'>Контакты</h3>
                     </div>
                 </div>
             </div>
@@ -103,11 +103,11 @@ const Header = () => {
 
                         <div className="flex items-center gap-8">
                             <div className="flex gap-2.5">
-                                <a href="https://web.telegram.org/a/" className="p-3 bg-gray-100 rounded-lg">
-                                    <PiTelegramLogo size={24} />
+                                <a href="https://web.telegram.org/a/" className="p-3 group hover:bg-gray-300 bg-gray-100 rounded-lg">
+                                    <PiTelegramLogo size={24} className='group-hover:text-MainColor'/>
                                 </a>
-                                <a href="https://www.whatsapp.com/?lang=ru_RU" className="p-3 bg-gray-100 rounded-lg">
-                                    <BsWhatsapp size={24} />
+                                <a href="https://www.whatsapp.com/?lang=ru_RU" className="p-3 group hover:bg-gray-300 bg-gray-100 rounded-lg">
+                                    <BsWhatsapp size={24}  className='group-hover:text-MainColor'/>
                                 </a>
                             </div>
 
@@ -131,13 +131,13 @@ const Header = () => {
                             </div>
 
                             <div className="flex gap-4">
-                                <div className="p-3 border border-gray-200 rounded-lg">
+                                <div className="p-3 border hover:text-MainColor border-gray-200 rounded-lg">
                                     <BsHeartFill size={24} />
                                 </div>
-                                <div className="p-3 border border-gray-200 rounded-lg">
+                                <div className="p-3 border hover:text-MainColor border-gray-200 rounded-lg">
                                     <GiArcher size={24} />
                                 </div>
-                                <div className="p-3 border border-gray-200 rounded-lg">
+                                <div className="p-3 border hover:text-MainColor border-gray-200 rounded-lg">
                                     <GiChest size={24} />
                                 </div>
                             </div>
@@ -149,24 +149,24 @@ const Header = () => {
                     <nav className="container text-sm mx-auto flex justify-between items-center mt-4">
                         <div className="flex gap-4 flex-wrap">
                             <button
-                                className="py-2.5 cursor-pointer px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
+                                className="py-2.5 hover:text-MainColor cursor-pointer px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
                                 <FaFire size={20} className="text-MainColor/50" /> Акции
                             </button>
-                            <button className="cursor-pointer py-2.5 px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
+                            <button className="hover:text-MainColor cursor-pointer py-2.5 px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
                                 <BsLightning size={20} className="text-MainColor/50" /> Горячее предложение
                             </button>
-                            <div className="py-2.5 px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
+                            <button className="py-2.5 hover:text-MainColor cursor-pointer px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
                                 <GiChest size={20} className="text-MainColor/50" /> Подарочные наборы
-                            </div>
-                            <div className="py-2.5 px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
+                            </button>
+                            <button className="py-2.5 hover:text-MainColor cursor-pointer px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
                                 <SiPoetry size={20} className="text-MainColor/50" /> События
-                            </div>
-                            <div className="py-2.5 px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
+                            </button>
+                            <button className="py-2.5 hover:text-MainColor cursor-pointer px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
                                 <FaFire size={20} className="text-MainColor/50" /> Наши бренды
-                            </div>
-                            <div className="py-2.5 px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
+                            </button>
+                            <button className="py-2.5 hover:text-MainColor cursor-pointer px-4 flex items-center rounded-lg bg-gray-100 gap-2.5">
                                 <FaSalesforce size={20} className="text-MainColor/50" /> Акции
-                            </div>
+                            </button>
                         </div>
 
                         <button className="px-6 py-2.5 bg-gray-100 text-MainColor flex items-center gap-3.5 rounded-lg">
