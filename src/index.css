@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .container{
-  @apply w-full max-w-[1440px] px-4 mx-auto
+  @apply w-full max-w-[1440px] px-5 mx-auto
 }
 @theme{
   --font-tenor:"Tenor Sans","sans-serif";
