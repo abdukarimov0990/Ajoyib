@@ -329,7 +329,7 @@ const Header = () => {
             }
             {
                 openMobileMenu && (
-                    <div className="py-8 container h-screen z-10 absolute w-full bg-white">
+                    <div className="py-8 container lg:hidden  min-h-screen z-10 absolute  w-full bg-white">
                         <div className="flex mb-6 items-center justify-between">
                             <div className="flex gap-2 flex-col">
                                 <p className="flex gap-1 items-center">
@@ -399,7 +399,7 @@ const Header = () => {
             }
             {
                 openMobileModal && (
-                    <div className="py-8 container h-screen z-10 absolute w-full bg-white ">
+                    <div className="py-8 container lg:hidden h-[720px] z-10 absolute w-full bg-white ">
                         <div onClick={() => SetopenMobileModal(false)} className="flex cursor-pointer gap-7 mb-6">
                             <MdOutlineKeyboardArrowLeft size={32} />
                             <h3 className='text-xl'>Каталог</h3>
@@ -453,7 +453,7 @@ const Header = () => {
             }
             {
                 openPhone && (
-                    <div className="py-8 container h-screen z-10 absolute w-full bg-white">
+                    <div className="py-8 container lg:hidden  h-[720px] z-10 absolute w-full bg-white">
                         <div onClick={() => SetopenPhone(false)} className="flex cursor-pointer gap-7 mb-6">
                             <MdOutlineKeyboardArrowLeft size={32} />
                             <h3 className='text-xl'>Смартфоны</h3>
@@ -481,7 +481,7 @@ const Header = () => {
             }
             {
                 openGadjet && (
-                    <div className="py-8 container h-screen z-10 absolute w-full bg-white">
+                    <div className="py-8 container lg:hidden   h-[720px] z-10 absolute w-full bg-white">
                         <div onClick={() => SetopenGadjet(false)} className="flex cursor-pointer gap-7 mb-6">
                             <MdOutlineKeyboardArrowLeft size={32} />
                             <h3 className='text-xl'>Гаджеты</h3>
